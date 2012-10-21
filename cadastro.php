@@ -14,12 +14,12 @@ window.location='formulario.php';
 <?php
 }
 $bairro=$_POST['bairro'];
-$pais=$_POST['pais'];
+$data=$_POST['data'];
 $cpf=$_POST['cpf'];
 $rg=$_POST['rg'];
 include 'conecta.php';
 
-$sql="INSERT INTO funcionario(id,nome,endereco,cidade,telefone,estado,bairro,pais,cpf,rg) VALUES(null,'$nome','$endereco','$cidade','$telefone','$estado','$bairro','$pais','$cpf','$rg')";
+$sql="INSERT INTO funcionario(id,nome,endereco,cidade,telefone,estado,bairro,pais,cpf,rg) VALUES(null,'$nome','$endereco','$cidade','$telefone','$estado','$bairro','$data','$cpf','$rg')";
 
 $resultado = mysql_query($sql);
 

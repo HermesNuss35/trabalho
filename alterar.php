@@ -160,7 +160,7 @@ include 'menu.php';
     </tr>
     <tr>
       <td>País:</td>
-      <td><input name="pais" type="text" value="<?php echo $linha['pais']?>" id="pais" maxlength="20" />
+      <td><input name="pais" type="text" value="<?php echo $linha['data']?>" id="pais" maxlength="20" />
         <span class="style1">*</span></td>
     </tr>
       <tr>

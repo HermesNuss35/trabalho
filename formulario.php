@@ -43,14 +43,14 @@ document.cadastro.bairro.focus();
 return false;
 }
 else
-if(document.cadastro.pais.value=="")
+if(document.cadastro.data.value=="")
 {
-alert("O Campo país é obrigatório!");
+alert("O Campo Data Nascimento é obrigatório!");
 document.cadastro.pais.focus(); 
 return false;
 }
 else
-if(document.cadaastro.rg.value==""){
+if(document.cadastro.rg.value==""){
 document.cadastro.rg.focus();
 return false;
 }
@@ -207,8 +207,8 @@ include 'menu.php';
     <td><input type="text" name="telefone" onkeypress="mascara2(this,'(##)####-####');" id="telefone"  maxlength="13"</td>
     </tr>
     <tr>
-      <td>País:</td>
-      <td><input name="pais" type="text" id="pais" maxlength="20" />
+      <td>Data Nasc</td>
+      <td><input name="data" type="text" id="data" onkeypress="mascara(this,'##/##/####');" maxlength="10" />
         <span class="style1">*</span></td>
     </tr>
       <tr>

@@ -18,6 +18,7 @@
     <td>endereço</td>
     <td>bairro</td>
     <td>cidade/UF</td>
+    <td>Data Nasc</td>
     <td>telefone</td>
     <td>cpf</td>
     <td>rg</td>
@@ -36,6 +37,7 @@ while($linha = mysql_fetch_assoc($resultado)) { ?>
     <td><?php echo $linha['endereco']; ?></td>
     <td><?php echo $linha['bairro']; ?></td>
     <td><?php echo $linha['cidade']; ?>/<?php echo $linha['estado']; ?></td>
+    <td><?php echo $linha['data']; ?></td>
     <td><?php echo $linha['telefone']; ?></td>
     <td><?php echo $linha['cpf']; ?></td>
     <td><?php echo $linha['rg']; ?></td>
